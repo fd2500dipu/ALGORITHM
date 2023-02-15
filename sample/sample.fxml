@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <BorderPane prefHeight="481.0" prefWidth="908.0" style="-fx-background-color: #FFFFFf;">
+         <left>
+            <Pane prefHeight="481.0" prefWidth="394.0" styleClass="linear-grad" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="7.0" layoutY="6.0" prefHeight="15.0" prefWidth="70.0" spacing="10.0">
+                     <children>
+                        <Circle fx:id="btnclose" fill="#ff5e1f" onMouseClicked="#handleMouseEvent" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#ffb330" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#3dff1f" radius="7.0" stroke="WHITE" strokeType="INSIDE" />
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="189.0" fitWidth="195.0" layoutX="89.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/undraw_doctor_kw5l__2_-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labeltitle" layoutX="130.0" layoutY="263.0" text="PRESKIBO" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelslogan" layoutX="106.0" layoutY="298.0" opacity="0.7" text="Raliable | Efficient | New" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="pnsignin2" prefHeight="481.0" prefWidth="479.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <TextField fx:id="tfpid" layoutX="158.0" layoutY="186.0" prefHeight="35.0" prefWidth="245.0" promptText="Enter PresctionID" />
+                        <Button fx:id="Btnsignin21" layoutX="283.0" layoutY="339.0" minHeight="25.0" minWidth="120.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="120.0" styleClass="button-1" stylesheets="@../css/style.css" text="Doctor Signin" />
+                        <Label fx:id="labelforgot1" layoutX="160.0" layoutY="343.0" text="Are you Doctor?" textFill="#5e5e5e" />
+                        <Label fx:id="signin1" layoutX="160.0" layoutY="81.0" text="Patient Sign-In" textFill="#5e5e5e">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnptnsigin" layoutX="283.0" layoutY="241.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="120.0" styleClass="button-1" stylesheets="@../css/style.css" text="Patients Login" textAlignment="JUSTIFY" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pnsignup" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <Label fx:id="labelsignup" layoutX="110.0" layoutY="81.0" text="Sign Up">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfname1" layoutX="110.0" layoutY="126.0" prefHeight="35.0" prefWidth="300.0" promptText="First Name" />
+                        <TextField fx:id="tfpassword2" layoutX="110.0" layoutY="306.0" prefHeight="35.0" prefWidth="300.0" promptText="Password" />
+                        <TextField fx:id="tfname2" layoutX="110.0" layoutY="186.0" prefHeight="35.0" prefWidth="299.0" promptText="Last Name" />
+                        <TextField fx:id="tfemail2" layoutX="110.0" layoutY="246.0" prefHeight="35.0" prefWidth="300.0" promptText="Email" />
+                        <Button fx:id="Btnsignin2" layoutX="289.0" layoutY="366.0" minHeight="35.0" minWidth="120.0" mnemonicParsing="false" onAction="#handleButtonAction" styleClass="button-1" stylesheets="@../css/style.css" text="Get Started">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="btnback" fitHeight="30.0" fitWidth="60.0" layoutX="110.0" layoutY="33.0" onMouseClicked="#handleMouseEvent" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/left-arrow.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pnsignin" prefHeight="481.0" prefWidth="479.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <PasswordField fx:id="tfpass" layoutX="160.0" layoutY="200.0" prefHeight="35.0" prefWidth="245.0" promptText="Password" />
+                        <TextField fx:id="tfemail" layoutX="160.0" layoutY="130.0" prefHeight="35.0" prefWidth="245.0" promptText="Username or Email" />
+                        <Button fx:id="btnsignin" layoutX="285.0" layoutY="270.0" minHeight="35.0" minWidth="120.0" mnemonicParsing="false" onAction="#handleButtonAction" styleClass="button-1" stylesheets="@../css/style.css" text="Sign In" />
+                        <Button fx:id="btnsignup" layoutX="160.0" layoutY="340.0" minWidth="120.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.76" prefHeight="35.0" prefWidth="245.0" styleClass="button-2" stylesheets="@../css/style.css" text="Don't have an account? Sign Up" textAlignment="JUSTIFY">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Label fx:id="labelforgot" layoutX="160.0" layoutY="279.0" text="Forgot Password?" textFill="#5e5e5e" />
+                        <Label fx:id="signin" layoutX="160.0" layoutY="81.0" text="Sign In" textFill="#5e5e5e">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnsignin2" layoutX="160.0" layoutY="416.0" minHeight="20.0" minWidth="120.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="23.0" prefWidth="120.0" styleClass="button-1" stylesheets="@../css/style.css" text="Patients Login" textAlignment="JUSTIFY">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
